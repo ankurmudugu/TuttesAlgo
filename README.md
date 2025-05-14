@@ -24,22 +24,15 @@ npm (comes with Node.js)
 Getting Started
 Clone the repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/ankurmudugu/TuttesAlgo.git
-cd TuttesAlgo
+cd graph-visualizer
 Install dependencies:
 
-bash
-Copy
-Edit
+
 npm install
 Run the development server:
 
-bash
-Copy
-Edit
 npm run dev
 Open the project in your browser at http://localhost:5173.
 
