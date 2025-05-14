@@ -1,15 +1,57 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tutte's Algorithm Graph Visualizer
+This project implements Tutte's Algorithm for generating planar straight-line drawings of graphs. It allows users to create graphs interactively by adding nodes and edges on a grid, and then applies Tutte's algorithm to display a planar representation of the graph.
 
-Currently, two official plugins are available:
+Project Structure
+src/components/GraphCanvas.jsx: The main component for rendering the graph, handling node and edge creation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+src/components/TutteHelper.jsx: Implements the logic for applying Tutte's algorithm to the graph.
 
-## Expanding the ESLint configuration
+Features
+Add nodes by clicking on the grid.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Tutte-s-Algorithm
-# Tutte-s-Algorithm
-# TuttesAlgo
+Draw edges between nodes, including cycles.
+
+Apply Tutte's algorithm to transform the graph into a planar straight-line graph.
+
+Prerequisites
+Before you can run this project, ensure you have the following installed:
+
+Node.js (LTS version recommended)
+
+npm (comes with Node.js)
+
+Getting Started
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/ankurmudugu/TuttesAlgo.git
+cd TuttesAlgo
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Run the development server:
+
+bash
+Copy
+Edit
+npm run dev
+Open the project in your browser at http://localhost:5173.
+
+Usage
+Create a Graph:
+
+Click on the grid to add nodes.
+
+Click on nodes to draw edges between them.
+
+To add an edge between two existing nodes, select the first node, click on the second node, and the edge will be created.
+
+Apply Tutte's Algorithm:
+
+After adding the nodes and edges, click the "Make Planar" button to apply Tutte's algorithm and display the planar straight-line graph.
